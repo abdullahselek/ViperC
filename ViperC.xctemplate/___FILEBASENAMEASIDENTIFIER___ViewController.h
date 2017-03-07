@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "___FILEBASENAMEASIDENTIFIER___InteractorProtocol.h"
+#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController<___FILEBASENAMEASIDENTIFIER___ViewProtocol>
 

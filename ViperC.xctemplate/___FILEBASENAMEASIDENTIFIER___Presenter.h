@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "___FILEBASENAMEASIDENTIFIER___InteractorProtocol.h"
+#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___Router: NSObject<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>
 
-@property (nonatomic, weak, nullable) id <___FILEBASENAMEASIDENTIFIER___ViewProtocol> view;
-@property (nonatomic, weak) id <___FILEBASENAMEASIDENTIFIER___InteractorProtocol> interactor;
-@property (nonatomic, weak) id <___FILEBASENAMEASIDENTIFIER___WireframeProtocol> router;
+@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___ViewProtocol> view;
+@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol> interactor;
+@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol> router;
 
 @end

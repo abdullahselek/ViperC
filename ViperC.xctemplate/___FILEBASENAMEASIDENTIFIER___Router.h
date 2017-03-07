@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "___FILEBASENAMEASIDENTIFIER___InteractorProtocol.h"
+#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___Router: NSObject<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "___FILEBASENAMEASIDENTIFIER___InteractorProtocol.h"
+#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>
 
