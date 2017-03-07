@@ -30,7 +30,7 @@
 
 @protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol <NSObject>
 
-- (void)setPresenter:(___FILEBASENAMEASIDENTIFIER___PresenterProtocol);
-- (___FILEBASENAMEASIDENTIFIER___PresenterProtocol)getPresenter;
+- (void)setPresenter:(___FILEBASENAMEASIDENTIFIER___PresenterProtocol)protocol;
+- (___FILEBASENAMEASIDENTIFIER___PresenterProtocol)getPresenterProtocol;
 
 @end
