@@ -24,6 +24,9 @@
 
 @protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol <NSObject>
 
+- (void)setPresenter:(___FILEBASENAMEASIDENTIFIER___PresenterProtocol)protocol;
+- (___FILEBASENAMEASIDENTIFIER___PresenterProtocol)getPresenterProtocol;
+
 @end
 
 #pragma mark - ViewProtocol
