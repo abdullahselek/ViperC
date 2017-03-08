@@ -9,5 +9,15 @@
 #import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
  
 @implementation ___FILEBASENAMEASIDENTIFIER___Interactor
+
+#pragma mark - LoginPresenterProtocol
+
+- (void)setPresenter:(id<LoginPresenterProtocol>)protocol{
+
+}
+
+- (id<LoginPresenterProtocol>)getPresenterProtocol {
+	return nil;
+}
  
 @end
