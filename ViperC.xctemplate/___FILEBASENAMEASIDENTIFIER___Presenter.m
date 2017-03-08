@@ -8,11 +8,11 @@
  
 #import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
 
-@implementation LoginPresenter
+@implementation ___FILEBASENAMEASIDENTIFIER___Presenter
 
-- (instancetype)initWithInterface:(id<LoginViewProtocol>)interface
-					   interactor:(id<LoginInteractorProtocol>)interactor
-					   	   router:(id<LoginWireframeProtocol>)router {
+- (instancetype)initWithInterface:(id<___FILEBASENAMEASIDENTIFIER___ViewProtocol>)interface
+					   interactor:(id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>)interactor
+					   	   router:(id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>)router {
     if (self = [super init]) {
         self.view = interface;
         self.interactor = interactor;

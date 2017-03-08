@@ -10,30 +10,30 @@
 
 #pragma mark - WireFrameProtocol
 
-@protocol LoginWireframeProtocol <NSObject>
+@protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol <NSObject>
 
 @end
 
 #pragma mark - PresenterProtocol
 
-@protocol LoginPresenterProtocol <NSObject>
+@protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol <NSObject>
 
 @end
 
 #pragma mark - InteractorProtocol
 
-@protocol LoginInteractorProtocol <NSObject>
+@protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol <NSObject>
 
-- (void)setPresenter:(id<LoginPresenterProtocol>)protocol;
-- (id<LoginPresenterProtocol>)getPresenterProtocol;
+- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol;
+- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol;
 
 @end
 
 #pragma mark - ViewProtocol
 
-@protocol LoginViewProtocol <NSObject>
+@protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol <NSObject>
 
-- (void)setPresenter:(id<LoginPresenterProtocol>)protocol;
-- (id<LoginPresenterProtocol>)getPresenterProtocol;
+- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol;
+- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol;
 
 @end

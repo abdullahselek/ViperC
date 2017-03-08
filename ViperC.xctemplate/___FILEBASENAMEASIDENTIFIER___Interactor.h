@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginInteractor: NSObject<LoginInteractorProtocol>
+@interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>
 
-@property (nonatomic, weak, nullable) id<LoginPresenterProtocol> presenter;
+@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol> presenter;
 
 @end
 

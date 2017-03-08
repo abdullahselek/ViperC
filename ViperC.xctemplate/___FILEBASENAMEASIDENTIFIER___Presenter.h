@@ -11,15 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginPresenter: NSObject<LoginPresenterProtocol>
+@interface ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>
 
-@property (nonatomic, weak, nullable) id<LoginViewProtocol> view;
-@property (nonatomic, weak) id<LoginInteractorProtocol> interactor;
-@property (nonatomic, weak) id<LoginWireframeProtocol> router;
+@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___ViewProtocol> view;
+@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol> interactor;
+@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol> router;
 
-- (instancetype)initWithInterface:(id<LoginViewProtocol>)interface
-                       interactor:(id<LoginInteractorProtocol>)interactor
-                           router:(id<LoginWireframeProtocol>)router;
+- (instancetype)initWithInterface:(id<___FILEBASENAMEASIDENTIFIER___ViewProtocol>)interface
+                       interactor:(id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>)interactor
+                           router:(id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>)router;
 
 @end
 

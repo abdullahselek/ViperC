@@ -10,13 +10,13 @@
  
 @implementation ___FILEBASENAMEASIDENTIFIER___Interactor
 
-#pragma mark - LoginPresenterProtocol
+#pragma mark - PresenterProtocol
 
-- (void)setPresenter:(id<LoginPresenterProtocol>)protocol{
+- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol{
 
 }
 
-- (id<LoginPresenterProtocol>)getPresenterProtocol {
+- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol {
 	return nil;
 }
  
