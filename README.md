@@ -117,3 +117,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 ```
+
+## License
+
+ViperC is released under the MIT license. See LICENSE for details.
