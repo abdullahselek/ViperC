@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface LoginInteractor: NSObject<LoginInteractorProtocol>
+
+@property (nonatomic, weak, nullable) id<LoginPresenterProtocol> presenter;
 
 @end
+
+NS_ASSUME_NONNULL_END

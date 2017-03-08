@@ -9,10 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___Router: NSObject<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___ViewProtocol> view;
-@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol> interactor;
-@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol> router;
+@interface LoginPresenter: NSObject<LoginPresenterProtocol>
+
+@property (nonatomic, weak, nullable) id<LoginViewProtocol> view;
+@property (nonatomic, weak) id<LoginInteractorProtocol> interactor;
+@property (nonatomic, weak) id<LoginWireframeProtocol> router;
+
+- (instancetype)initWithInterface:(id<LoginViewProtocol>)interface
+                       interactor:(id<LoginInteractorProtocol>)interactor
+                           router:(id<LoginWireframeProtocol>)router;
 
 @end
+
+NS_ASSUME_NONNULL_END
