@@ -10,7 +10,7 @@
  
 @implementation ___FILEBASENAMEASIDENTIFIER___Interactor
 
-#pragma mark - PresenterProtocol
+#pragma mark - InteractorProtocol
 
 - (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol{
 	self.presenter = protocol;
