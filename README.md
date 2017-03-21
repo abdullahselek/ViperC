@@ -1,3 +1,5 @@
+![License](https://img.shields.io/dub/l/vibe-d.svg)
+
 ![ViperC](https://github.com/abdullahselek/ViperC/blob/master/images/viperc_header.png)
 
 # ViperC
