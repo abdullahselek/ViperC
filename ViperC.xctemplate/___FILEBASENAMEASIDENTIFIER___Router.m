@@ -18,9 +18,7 @@
     ___FILEBASENAMEASIDENTIFIER___ViewController *viewController = [[___FILEBASENAMEASIDENTIFIER___ViewController alloc] initWithNibName:viewName bundle:nil];
     ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [[___FILEBASENAMEASIDENTIFIER___Interactor alloc] init];
     ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
-    ___FILEBASENAMEASIDENTIFIER___Presenter *presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:viewController.presenter
-                                                                                                                 interactor:interactor
-                                                                                                                     router:router];
+    ___FILEBASENAMEASIDENTIFIER___Presenter *presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:viewController interactor:interactor router:router];
     viewController.presenter = presenter;
     interactor.presenter = presenter;
     router.viewController = viewController;
