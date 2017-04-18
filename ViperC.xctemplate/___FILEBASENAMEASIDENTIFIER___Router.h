@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
+#import "___FILEBASENAMEASIDENTIFIER___ViewController.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___Router: NSObject<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>
+
+@property (nonatomic, weak) ___FILEBASENAMEASIDENTIFIER___ViewController *viewController;
+
++ (UIViewController *)createModule;
 
 @end
