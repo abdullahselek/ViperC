@@ -14,6 +14,16 @@
 	[super viewDidLoad];
 }
 
+#pragma mark - ViewProtocol
+
+- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol {
+	_presenter = protocol;
+}
+
+- (id<ToDoPresenterProtocol>)getPresenterProtocol {
+	return self.presenter;
+}
+
 #pragma mark - UITableView Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
