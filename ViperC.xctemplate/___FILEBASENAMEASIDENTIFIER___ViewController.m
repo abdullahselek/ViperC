@@ -14,14 +14,4 @@
 	[super viewDidLoad];
 }
 
-#pragma mark - ViewProtocol
-
-- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol {
-	self.presenter = protocol;
-}
-
-- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol {
-	return self.presenter;
-}
-
 @end

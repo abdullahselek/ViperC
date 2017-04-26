@@ -9,15 +9,5 @@
 #import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
  
 @implementation ___FILEBASENAMEASIDENTIFIER___Interactor
-
-#pragma mark - InteractorProtocol
-
-- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol{
-	self.presenter = protocol;
-}
-
-- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol {
-	return self.presenter;
-}
  
 @end
