@@ -11,9 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ToDoViewController: UIViewController<ToDoViewProtocol>
+@interface ToDoViewController: UIViewController<ToDoViewProtocol, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, nullable) id<ToDoPresenterProtocol> presenter;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
