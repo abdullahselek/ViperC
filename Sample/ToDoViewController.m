@@ -37,7 +37,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ToDoTableViewCell"];
+    if (cell == nil) {
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ToDoTableViewCell" owner:self options:nil];
+        cell = [topLevelObjects objectAtIndex:0];
+    }
+
+    return cell;
 }
 
 @end

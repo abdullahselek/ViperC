@@ -10,4 +10,6 @@
 
 @interface ToDoTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *todoLabel;
+
 @end
