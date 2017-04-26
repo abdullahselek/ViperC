@@ -24,10 +24,16 @@
 
 @protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol <NSObject>
 
+- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol;
+- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol;
+
 @end
 
 #pragma mark - ViewProtocol
 
 @protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol <NSObject>
+
+- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol;
+- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol;
 
 @end

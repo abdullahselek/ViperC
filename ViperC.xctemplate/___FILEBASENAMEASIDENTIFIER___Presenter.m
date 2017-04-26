@@ -17,7 +17,7 @@
         self.view = interface;
         self.interactor = interactor;
         self.router = router;
-        [self.interactor setPresenter:self];
+        self.interactor.presenter = self;
     }
     return self;
 }
