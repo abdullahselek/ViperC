@@ -9,15 +9,5 @@
 #import "ToDoInteractor.h"
  
 @implementation ToDoInteractor
-
-#pragma mark - InteractorProtocol
-
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol{
-	self.presenter = protocol;
-}
-
-- (id<ToDoPresenterProtocol>)getPresenterProtocol {
-	return self.presenter;
-}
  
 @end

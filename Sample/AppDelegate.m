@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ToDoViewController.h"
+#import "ToDoPresenter.h"
+#import "ToDoInteractor.h"
 
 @interface AppDelegate ()
 
@@ -17,15 +19,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ToDoViewController *todoViewController = [[ToDoViewController alloc] initWithNibName:@"ToDoViewController" bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:todoViewController];
-    self.window.rootViewController = navigationController;
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [self createToDoView];
     return YES;
 }
 
+- (void)createToDoView {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    ToDoViewController *todoViewController = [[ToDoViewController alloc] initWithNibName:@"ToDoViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:todoViewController];
+
+    ToDoPresenter *presenter = [[ToDoPresenter alloc] init];
+    ToDoInteractor *interactor = [[ToDoInteractor alloc] init];
+    todoViewController.presenter = presenter;
+    presenter.view = todoViewController;
+
+    presenter.interactor = interactor;
+    interactor.presenter = presenter;
+
+    self.window.rootViewController = navigationController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
