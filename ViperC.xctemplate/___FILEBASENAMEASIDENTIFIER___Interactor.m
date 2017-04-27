@@ -12,12 +12,12 @@
 
 #pragma mark - InteractorProtocol
 
-- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol{
-	_presenter = protocol;
+- (void)setOutput:(id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)output {
+	_output = output;
 }
 
-- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol {
-	return self.presenter;
+- (id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)getOutputProtocol {
+	return self.output;
 }
  
 @end

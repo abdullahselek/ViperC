@@ -22,10 +22,14 @@
 
 #pragma mark - InteractorProtocol
 
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorProtocol <NSObject>
+@protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol <NSObject>
 
-- (void)setPresenter:(id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)protocol;
-- (id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>)getPresenterProtocol;
+@end
+
+@protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol <NSObject>
+
+- (void)setOutput:(id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)output;
+- (id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)getOutputProtocol;
 
 @end
 

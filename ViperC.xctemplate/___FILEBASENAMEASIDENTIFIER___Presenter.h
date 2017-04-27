@@ -11,14 +11,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject<___FILEBASENAMEASIDENTIFIER___PresenterProtocol>
+@interface ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>
 
 @property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___ViewProtocol> view;
-@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol> interactor;
+@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol> interactor;
 @property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol> router;
 
 - (instancetype)initWithInterface:(id<___FILEBASENAMEASIDENTIFIER___ViewProtocol>)interface
-                       interactor:(id<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>)interactor
+                       interactor:(id<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol>)interactor
                            router:(id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>)router;
 
 @end

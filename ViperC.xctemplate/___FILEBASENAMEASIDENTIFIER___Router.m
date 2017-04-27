@@ -20,7 +20,7 @@
     ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
     ___FILEBASENAMEASIDENTIFIER___Presenter *presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:viewController interactor:interactor router:router];
     viewController.presenter = presenter;
-    interactor.presenter = presenter;
+    interactor.output = presenter;
     router.viewController = viewController;
     return viewController;
 }

@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorProtocol>
+@interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol>
 
-@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___PresenterProtocol> presenter;
+@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol> output;
 
 @end
 
