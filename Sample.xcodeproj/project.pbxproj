@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C08387E1EB24753001F79F3 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C08387D1EB24753001F79F3 /* ToDoItem.m */; };
 		A42B3B401EB132C70040BE10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B3F1EB132C70040BE10 /* main.m */; };
 		A42B3B431EB132C70040BE10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B421EB132C70040BE10 /* AppDelegate.m */; };
 		A42B3B4B1EB132C70040BE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B3B4A1EB132C70040BE10 /* Assets.xcassets */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C08387C1EB24753001F79F3 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		1C08387D1EB24753001F79F3 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		A42B3B3B1EB132C70040BE10 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42B3B3F1EB132C70040BE10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A42B3B411EB132C70040BE10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				A42B3B741EB139190040BE10 /* ToDoTableViewCell.h */,
 				A42B3B751EB139190040BE10 /* ToDoTableViewCell.m */,
 				A42B3B721EB138D80040BE10 /* ToDoTableViewCell.xib */,
+				1C08387C1EB24753001F79F3 /* ToDoItem.h */,
+				1C08387D1EB24753001F79F3 /* ToDoItem.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			files = (
 				A42B3B6F1EB133820040BE10 /* ToDoRouter.m in Sources */,
 				A42B3B6E1EB133820040BE10 /* ToDoPresenter.m in Sources */,
+				1C08387E1EB24753001F79F3 /* ToDoItem.m in Sources */,
 				A42B3B761EB139190040BE10 /* ToDoTableViewCell.m in Sources */,
 				A42B3B701EB133820040BE10 /* ToDoViewController.m in Sources */,
 				A42B3B431EB132C70040BE10 /* AppDelegate.m in Sources */,
