@@ -8,18 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "ToDoProtocols.h"
+#import "ToDoItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ToDoPresenter: NSObject<ToDoPresenterProtocol>
+@interface ToDoPresenter: NSObject<ToDoInteractorOutputProtocol>
 
 @property (nonatomic, weak, nullable) id<ToDoViewProtocol> view;
-@property (nonatomic, weak) id<ToDoInteractorProtocol> interactor;
+@property (nonatomic, weak) id<ToDoInteractorInputProtocol> interactor;
 @property (nonatomic, weak) id<ToDoWireframeProtocol> router;
 
 - (instancetype)initWithInterface:(id<ToDoViewProtocol>)interface
-                       interactor:(id<ToDoInteractorProtocol>)interactor
+                       interactor:(id<ToDoInteractorInputProtocol>)interactor
                            router:(id<ToDoWireframeProtocol>)router;
+- (void)addToDoItem:(ToDoItem *)item;
 
 @end
 

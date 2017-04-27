@@ -8,6 +8,12 @@
 
 #import "ToDoViewController.h"
 
+@interface ToDoViewController ()
+
+@property (nonatomic) NSMutableArray *todoList;
+
+@end
+
 @implementation ToDoViewController
 
 - (void)viewDidLoad {
@@ -16,30 +22,29 @@
                                                                                  target:self
                                                                                  action:@selector(add:)];
     self.navigationItem.rightBarButtonItem = addTodoItem;
+    self.todoList = [NSMutableArray array];
 }
 
 #pragma mark - IBActions
 
 - (IBAction)add:(id)sender {
-
-}
-
-#pragma mark - ViewProtocol
-
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol {
-	_presenter = protocol;
-}
-
-- (id<ToDoPresenterProtocol>)getPresenterProtocol {
-	return self.presenter;
+    ToDoItem *item = [[ToDoItem alloc] initWithText:@"ToDo" date:@"28.04.2017"];
+    [self.presenter addToDoItem:item];
 }
 
 - (void)addToDoItem:(ToDoItem *)item {
-
+    [self.todoList addObject:item];
 }
 
 - (void)removeToDoItem:(ToDoItem *)item {
+    [self.todoList removeObject:item];
+}
 
+#pragma mark - WireFrameProtocol
+
+- (void)showAddedItem:(ToDoItem *)item {
+    [self.todoList addObject:item];
+    [self.tableView reloadData];
 }
 
 #pragma mark - UITableView Delegate
@@ -51,7 +56,7 @@
 #pragma mark - UITableView DataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [self.todoList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -60,7 +65,8 @@
         NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ToDoTableViewCell" owner:self options:nil];
         cell = [topLevelObjects objectAtIndex:0];
     }
-
+    ToDoItem *item = self.todoList[indexPath.row];
+    cell.textLabel.text = item.text;
     return cell;
 }
 

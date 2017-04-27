@@ -23,13 +23,18 @@
 
 #pragma mark - InteractorProtocol
 
-@protocol ToDoInteractorProtocol <NSObject>
+@protocol ToDoInteractorOutputProtocol <NSObject>
 
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol;
-- (id<ToDoPresenterProtocol>)getPresenterProtocol;
+- (void)sendAddedItem:(ToDoItem *)item;
+
+@end
+
+@protocol ToDoInteractorInputProtocol <NSObject>
+
+- (void)setOutput:(id<ToDoInteractorOutputProtocol>)output;
+- (id<ToDoInteractorOutputProtocol>)getOutputProtocol;
 
 - (void)addToDoItem:(ToDoItem *)item;
-- (void)removeToDoItem:(ToDoItem *)item;
 
 @end
 
@@ -37,10 +42,6 @@
 
 @protocol ToDoViewProtocol <NSObject>
 
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol;
-- (id<ToDoPresenterProtocol>)getPresenterProtocol;
-
-- (void)addToDoItem:(ToDoItem *)item;
-- (void)removeToDoItem:(ToDoItem *)item;
+- (void)showAddedItem:(ToDoItem *)item;
 
 @end

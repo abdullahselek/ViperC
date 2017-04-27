@@ -35,7 +35,7 @@
     presenter.view = todoViewController;
 
     presenter.interactor = interactor;
-    interactor.presenter = presenter;
+    interactor.output = presenter;
 
     self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];

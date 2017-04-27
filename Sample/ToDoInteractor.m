@@ -13,20 +13,16 @@
 
 #pragma mark - InteractorProtocol
 
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol{
-	_presenter = protocol;
+- (void)setOutput:(id<ToDoInteractorOutputProtocol>)output {
+    _output = output;
 }
 
-- (id<ToDoPresenterProtocol>)getPresenterProtocol {
-	return self.presenter;
+- (id<ToDoInteractorOutputProtocol>)getOutputProtocol {
+    return self.output;
 }
 
 - (void)addToDoItem:(ToDoItem *)item {
-
-}
-
-- (void)removeToDoItem:(ToDoItem *)item {
-
+    [self.output sendAddedItem:item];
 }
 
 @end

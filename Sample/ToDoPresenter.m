@@ -11,15 +11,25 @@
 @implementation ToDoPresenter
 
 - (instancetype)initWithInterface:(id<ToDoViewProtocol>)interface
-					   interactor:(id<ToDoInteractorProtocol>)interactor
-					   	   router:(id<ToDoWireframeProtocol>)router {
+                       interactor:(id<ToDoInteractorInputProtocol>)interactor
+                           router:(id<ToDoWireframeProtocol>)router {
     if (self = [super init]) {
         self.view = interface;
         self.interactor = interactor;
         self.router = router;
-        [self.interactor setPresenter:self];
+        [self.interactor setOutput:self];
     }
     return self;
+}
+
+- (void)addToDoItem:(ToDoItem *)item {
+    [self.interactor addToDoItem:item];
+}
+
+#pragma mark - ToDoInteractorOutputProtocol
+
+- (void)sendAddedItem:(ToDoItem *)item {
+    [self.view showAddedItem:item];
 }
 
 @end

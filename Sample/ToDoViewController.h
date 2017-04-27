@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ToDoProtocols.h"
+#import "ToDoPresenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoViewController: UIViewController<ToDoViewProtocol, UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, nullable) id<ToDoPresenterProtocol> presenter;
+@property (nonatomic, nullable) ToDoPresenter *presenter;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
