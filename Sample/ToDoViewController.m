@@ -12,6 +12,16 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    UIBarButtonItem *addTodoItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                 target:self
+                                                                                 action:@selector(add:)];
+    self.navigationItem.rightBarButtonItem = addTodoItem;
+}
+
+#pragma mark - IBActions
+
+- (IBAction)add:(id)sender {
+
 }
 
 #pragma mark - ViewProtocol
