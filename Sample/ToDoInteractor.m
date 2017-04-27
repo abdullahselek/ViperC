@@ -7,6 +7,7 @@
 //
  
 #import "ToDoInteractor.h"
+#import "ToDoItem.h"
  
 @implementation ToDoInteractor
 
@@ -18,6 +19,14 @@
 
 - (id<ToDoPresenterProtocol>)getPresenterProtocol {
 	return self.presenter;
+}
+
+- (void)addToDoItem:(ToDoItem *)item {
+
+}
+
+- (void)removeToDoItem:(ToDoItem *)item {
+
 }
 
 @end

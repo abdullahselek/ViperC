@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ToDoItem.h"
 
 #pragma mark - WireFrameProtocol
 
@@ -27,6 +28,9 @@
 - (void)setPresenter:(id<ToDoPresenterProtocol>)protocol;
 - (id<ToDoPresenterProtocol>)getPresenterProtocol;
 
+- (void)addToDoItem:(ToDoItem *)item;
+- (void)removeToDoItem:(ToDoItem *)item;
+
 @end
 
 #pragma mark - ViewProtocol
@@ -35,5 +39,8 @@
 
 - (void)setPresenter:(id<ToDoPresenterProtocol>)protocol;
 - (id<ToDoPresenterProtocol>)getPresenterProtocol;
+
+- (void)addToDoItem:(ToDoItem *)item;
+- (void)removeToDoItem:(ToDoItem *)item;
 
 @end

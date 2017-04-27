@@ -24,10 +24,18 @@
 	return self.presenter;
 }
 
+- (void)addToDoItem:(ToDoItem *)item {
+
+}
+
+- (void)removeToDoItem:(ToDoItem *)item {
+
+}
+
 #pragma mark - UITableView Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+
 }
 
 #pragma mark - UITableView DataSource
