@@ -20,7 +20,6 @@
     ToDoRouter *router = [[ToDoRouter alloc] init];
     ToDoPresenter *presenter = [[ToDoPresenter alloc] initWithInterface:viewController interactor:interactor router:router];
     viewController.presenter = presenter;
-    interactor.output = presenter;
     router.viewController = viewController;
     return viewController;
 }
