@@ -47,19 +47,20 @@ Example for a ToDO module:
 
 #pragma mark - InteractorProtocol
 
-@protocol ToDoInteractorProtocol <NSObject>
+@protocol ToDoInteractorOutputProtocol <NSObject>
 
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol;
-- (id<ToDoPresenterProtocol>)getPresenterProtocol;
+@end
+
+@protocol ToDoInteractorInputProtocol <NSObject>
+
+- (void)setOutput:(id<ToDoInteractorOutputProtocol>)output;
+- (id<ToDoInteractorOutputProtocol>)getOutputProtocol;
 
 @end
 
 #pragma mark - ViewProtocol
 
 @protocol ToDoViewProtocol <NSObject>
-
-- (void)setPresenter:(id<ToDoPresenterProtocol>)protocol;
-- (id<ToDoPresenterProtocol>)getPresenterProtocol;
 
 @end
 ```
@@ -69,9 +70,9 @@ Example for a ToDO module:
 ```
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ToDoInteractor: NSObject<ToDoInteractorProtocol>
+@interface ToDoInteractor: NSObject<ToDoInteractorInputProtocol>
 
-@property (nonatomic, weak, nullable) id<ToDoPresenterProtocol> presenter;
+@property (nonatomic, weak, nullable) id<ToDoInteractorOutputProtocol> output;
 
 @end
 
@@ -83,14 +84,14 @@ NS_ASSUME_NONNULL_END
 ```
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ToDoPresenter: NSObject<ToDoPresenterProtocol>
+@interface ToDoPresenter: NSObject<ToDoInteractorOutputProtocol>
 
 @property (nonatomic, weak, nullable) id<ToDoViewProtocol> view;
-@property (nonatomic, weak) id<ToDoInteractorProtocol> interactor;
+@property (nonatomic) id<ToDoInteractorInputProtocol> interactor;
 @property (nonatomic, weak) id<ToDoWireframeProtocol> router;
 
 - (instancetype)initWithInterface:(id<ToDoViewProtocol>)interface
-                       interactor:(id<ToDoInteractorProtocol>)interactor
+                       interactor:(id<ToDoInteractorInputProtocol>)interactor
                            router:(id<ToDoWireframeProtocol>)router;
 
 @end
@@ -103,6 +104,10 @@ NS_ASSUME_NONNULL_END
 ```
 @interface ToDoRouter: NSObject<ToDoWireframeProtocol>
 
+@property (nonatomic, weak) ToDoViewController *viewController;
+
++ (UIViewController *)createModule;
+
 @end
 ```
 
@@ -113,7 +118,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoViewController: UIViewController<ToDoViewProtocol>
 
-@property (nonatomic, nullable) id<ToDoPresenterProtocol> presenter;
+@property (nonatomic) ToDoPresenter *presenter;
 
 @end
 
