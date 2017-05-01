@@ -7,6 +7,7 @@ target 'Sample' do
     inherit! :search_paths
     pod 'OCMock', '~> 3.4'
   	pod 'Expecta', '~> 1.0.5'
+  	pod 'Quick', '~> 1.1.0'
   end
 
 end
