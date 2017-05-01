@@ -12,7 +12,6 @@
 		A42B3B401EB132C70040BE10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B3F1EB132C70040BE10 /* main.m */; };
 		A42B3B431EB132C70040BE10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B421EB132C70040BE10 /* AppDelegate.m */; };
 		A42B3B4B1EB132C70040BE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B3B4A1EB132C70040BE10 /* Assets.xcassets */; };
-		A42B3B591EB132C70040BE10 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B581EB132C70040BE10 /* SampleTests.m */; };
 		A42B3B6D1EB133820040BE10 /* ToDoInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B651EB133820040BE10 /* ToDoInteractor.m */; };
 		A42B3B6E1EB133820040BE10 /* ToDoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B671EB133820040BE10 /* ToDoPresenter.m */; };
 		A42B3B6F1EB133820040BE10 /* ToDoRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B691EB133820040BE10 /* ToDoRouter.m */; };
@@ -47,7 +46,6 @@
 		A42B3B4A1EB132C70040BE10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42B3B4F1EB132C70040BE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42B3B541EB132C70040BE10 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A42B3B581EB132C70040BE10 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
 		A42B3B5A1EB132C70040BE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42B3B631EB133820040BE10 /* ToDoProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoProtocols.h; sourceTree = "<group>"; };
 		A42B3B641EB133820040BE10 /* ToDoInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoInteractor.h; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 		A42B3B571EB132C70040BE10 /* SampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A42B3B581EB132C70040BE10 /* SampleTests.m */,
 				A42B3B5A1EB132C70040BE10 /* Info.plist */,
 			);
 			path = SampleTests;
@@ -386,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42B3B591EB132C70040BE10 /* SampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
