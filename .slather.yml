@@ -1,0 +1,6 @@
+ci_service: travis_ci
+coverage_service: coveralls
+workspace: Sample.xcworkspace
+xcodeproj: Sample.xcodeproj
+scheme: Sample
+source_directory: Sample/
