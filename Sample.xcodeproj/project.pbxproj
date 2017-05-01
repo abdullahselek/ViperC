@@ -20,6 +20,7 @@
 		A42B3B731EB138D80040BE10 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42B3B721EB138D80040BE10 /* ToDoTableViewCell.xib */; };
 		A42B3B761EB139190040BE10 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B751EB139190040BE10 /* ToDoTableViewCell.m */; };
 		A4FFD5521EB7358300223424 /* ToDoInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FFD5511EB7358300223424 /* ToDoInteractorTests.m */; };
+		A4FFD5541EB7476600223424 /* ToDoPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FFD5531EB7476600223424 /* ToDoPresenterTests.m */; };
 		F82183400608BA4A9916D725 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC541BBC3D3E793E52A9E70B /* Pods_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A42B3B741EB139190040BE10 /* ToDoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewCell.h; sourceTree = "<group>"; };
 		A42B3B751EB139190040BE10 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
 		A4FFD5511EB7358300223424 /* ToDoInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoInteractorTests.m; sourceTree = "<group>"; };
+		A4FFD5531EB7476600223424 /* ToDoPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoPresenterTests.m; sourceTree = "<group>"; };
 		CC541BBC3D3E793E52A9E70B /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56BED32DE1F5EAC0F233710 /* Pods_SampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 			children = (
 				A42B3B5A1EB132C70040BE10 /* Info.plist */,
 				A4FFD5511EB7358300223424 /* ToDoInteractorTests.m */,
+				A4FFD5531EB7476600223424 /* ToDoPresenterTests.m */,
 			);
 			path = SampleTests;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FFD5541EB7476600223424 /* ToDoPresenterTests.m in Sources */,
 				A4FFD5521EB7358300223424 /* ToDoInteractorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
