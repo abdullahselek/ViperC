@@ -19,6 +19,7 @@
 		A42B3B711EB133820040BE10 /* ToDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42B3B6C1EB133820040BE10 /* ToDoViewController.xib */; };
 		A42B3B731EB138D80040BE10 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42B3B721EB138D80040BE10 /* ToDoTableViewCell.xib */; };
 		A42B3B761EB139190040BE10 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B3B751EB139190040BE10 /* ToDoTableViewCell.m */; };
+		A47001FF1EBBA8C100AFBB18 /* ToDoViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47001FE1EBBA8C100AFBB18 /* ToDoViewControllerTests.m */; };
 		A4D90F811EB91854003972AC /* ToDoRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D90F801EB91854003972AC /* ToDoRouterTests.m */; };
 		A4FFD5521EB7358300223424 /* ToDoInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FFD5511EB7358300223424 /* ToDoInteractorTests.m */; };
 		A4FFD5541EB7476600223424 /* ToDoPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FFD5531EB7476600223424 /* ToDoPresenterTests.m */; };
@@ -63,6 +64,7 @@
 		A42B3B721EB138D80040BE10 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 		A42B3B741EB139190040BE10 /* ToDoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewCell.h; sourceTree = "<group>"; };
 		A42B3B751EB139190040BE10 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
+		A47001FE1EBBA8C100AFBB18 /* ToDoViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoViewControllerTests.m; sourceTree = "<group>"; };
 		A4D90F801EB91854003972AC /* ToDoRouterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoRouterTests.m; sourceTree = "<group>"; };
 		A4FFD5511EB7358300223424 /* ToDoInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoInteractorTests.m; sourceTree = "<group>"; };
 		A4FFD5531EB7476600223424 /* ToDoPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoPresenterTests.m; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				A4FFD5511EB7358300223424 /* ToDoInteractorTests.m */,
 				A4FFD5531EB7476600223424 /* ToDoPresenterTests.m */,
 				A4D90F801EB91854003972AC /* ToDoRouterTests.m */,
+				A47001FE1EBBA8C100AFBB18 /* ToDoViewControllerTests.m */,
 			);
 			path = SampleTests;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47001FF1EBBA8C100AFBB18 /* ToDoViewControllerTests.m in Sources */,
 				A4D90F811EB91854003972AC /* ToDoRouterTests.m in Sources */,
 				A4FFD5541EB7476600223424 /* ToDoPresenterTests.m in Sources */,
 				A4FFD5521EB7358300223424 /* ToDoInteractorTests.m in Sources */,
