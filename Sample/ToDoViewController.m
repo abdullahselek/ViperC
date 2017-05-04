@@ -32,25 +32,11 @@
     [self.presenter addToDoItem:item];
 }
 
-- (void)addToDoItem:(ToDoItem *)item {
-    [self.todoList addObject:item];
-}
-
-- (void)removeToDoItem:(ToDoItem *)item {
-    [self.todoList removeObject:item];
-}
-
 #pragma mark - WireFrameProtocol
 
 - (void)showAddedItem:(ToDoItem *)item {
     [self.todoList addObject:item];
     [self.tableView reloadData];
-}
-
-#pragma mark - UITableView Delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
 }
 
 #pragma mark - UITableView DataSource
