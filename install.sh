@@ -22,4 +22,4 @@ mkdir -p "${installDirectory}"
 
 cp -r *.xctemplate "${installDirectory}"
 
-echo "ViperC successfully installed!"
+echo "ViperC successfully installed! 🎉"
