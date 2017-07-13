@@ -24,6 +24,8 @@
 
 @protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol <NSObject>
 
+/* Interactor -> Presenter */
+
 @end
 
 @protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol <NSObject>
@@ -31,10 +33,14 @@
 - (void)setOutput:(id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)output;
 - (id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)getOutputProtocol;
 
+/* Presenter -> Interactor */
+
 @end
 
 #pragma mark - ViewProtocol
 
 @protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol <NSObject>
+
+/* Presenter -> ViewController */
 
 @end
