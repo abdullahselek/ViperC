@@ -44,6 +44,23 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>Objective-C | Swift</string>
+			<key>Description</key>
+			<string>Language</string>
+			<key>Name</key>
+			<string>Language</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Objective-C</string>
+			<key>Values</key>
+			<array>
+				<string>Objective-C</string>
+				<string>Swift</string>
+			</array>
+		</dict>
 	</array>
 	<key>Template Author</key>
 	<string>Abdullah Selek - @abdullahselek</string>
