@@ -13,6 +13,7 @@ import Foundation
 protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol: class {
 
 }
+
 // MARK: PresenterProtocol
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
