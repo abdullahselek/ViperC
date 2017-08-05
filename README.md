@@ -3,9 +3,9 @@
 ![ViperC](https://github.com/abdullahselek/ViperC/blob/master/images/viperc_header.png)
 
 # ViperC
-Xcode template for VIPER Architecture written in Objective-C
+Xcode template for VIPER Architecture for both Objective-C and Swift.
 
-- ViperC creates modules for you when you want to use VIPER architecture in your projects. I hope it will be useful, and you can use it both in your Objective-C and Swift projects.
+- ViperC creates modules for you when you want to use VIPER architecture in your projects. You can choose your language for the VIPER modules that will be created.
 
 ## Installation
 
