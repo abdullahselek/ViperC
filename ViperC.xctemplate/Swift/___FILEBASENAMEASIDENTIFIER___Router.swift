@@ -25,4 +25,5 @@ class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___Wirefr
 
         return view
     }
+
 }
