@@ -9,16 +9,19 @@
 import Foundation
 
 // MARK: WireFrameProtocol
+
 protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol: class {
 
 }
 // MARK: PresenterProtocol
+
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
 
     var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol? { get set }
 }
 
 // MARK: InteractorProtocol
+
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol: class {
 
     /** Interactor -> Presenter */
@@ -32,6 +35,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol: class {
 }
 
 // MARK: ViewProtocol
+
 protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
 
     var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol? { get set }
