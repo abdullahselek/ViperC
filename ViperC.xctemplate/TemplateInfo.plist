@@ -13,7 +13,7 @@
 	<key>DefaultCompletionName</key>
 	<string>ViperC</string>
 	<key>Description</key>
-	<string>Basic Objective-C VIPER module template. Creates View, Interactor, Presenter, Router with protocols.</string>
+	<string>Objective-C and Swift VIPER module template. Creates View, Interactor, Presenter, Router with protocols.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
