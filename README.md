@@ -11,7 +11,9 @@ Xcode template for VIPER Architecture for both Objective-C and Swift.
 
 - Clone this repository
 - Go to repository main folder
-- Then just run ```./install.sh``` and it will be ready
+- ```./install.sh ViperC``` installs ViperC module for Objective-C or Swift.
+- ```./install.sh ViperC-Quick``` installs ViperC unit tests module for Objective-C or Swift. It uses **Quick** and **Expecta** for Objective-C and **Quick** and **Nimble** for Swift.
+
 
 ## Template Path
 
