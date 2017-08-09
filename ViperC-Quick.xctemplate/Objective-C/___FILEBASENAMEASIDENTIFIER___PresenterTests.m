@@ -17,20 +17,18 @@ QuickSpecBegin(___FILEBASENAMEASIDENTIFIER___PresenterTests)
 
 describe(@"___FILEBASENAMEASIDENTIFIER___Presenter Tests", ^{
     describe(@"-[___FILEBASENAMEASIDENTIFIER___Presenter initWithInterface:interactor:router:]", ^{
-        context(@"with proper parameters", ^{
-            __block ___FILEBASENAMEASIDENTIFIER___Presenter *presenter;
+        __block ___FILEBASENAMEASIDENTIFIER___Presenter *presenter;
 
-            beforeEach(^{
-                ___FILEBASENAMEASIDENTIFIER___ViewController *view = [[___FILEBASENAMEASIDENTIFIER___ViewController alloc] init];
-                ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [[___FILEBASENAMEASIDENTIFIER___Interactor alloc] init];
-                ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
-                presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:view interactor:interactor router:router];
-            });
+        beforeEach(^{
+            ___FILEBASENAMEASIDENTIFIER___ViewController *view = [[___FILEBASENAMEASIDENTIFIER___ViewController alloc] init];
+            ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [[___FILEBASENAMEASIDENTIFIER___Interactor alloc] init];
+            ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
+            presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:view interactor:interactor router:router];
+        });
 
-            it(@"successfully initialises", ^{
-                expect(presenter).notTo.beNil();
-                expect(presenter.interactor).notTo.beNil();
-            });
+        it(@"successfully initialises", ^{
+            expect(presenter).notTo.beNil();
+            expect(presenter.interactor).notTo.beNil();
         });
     });
 });
