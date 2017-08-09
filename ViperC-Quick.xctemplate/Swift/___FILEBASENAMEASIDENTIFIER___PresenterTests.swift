@@ -16,17 +16,15 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: QuickSpec {
     override func spec() {
         describe("Presenter Tests") {
             describe(".init(interface:interactor:router:)", {
-                context("with proper parameters", {
-                    var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
+                var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
 
-                    beforeEach {
-                        presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: ___FILEBASENAMEASIDENTIFIER___ViewController(), interactor: ___FILEBASENAMEASIDENTIFIER___Interactor(), router: ___FILEBASENAMEASIDENTIFIER___Router())
-                    }
+                beforeEach {
+                    presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: ___FILEBASENAMEASIDENTIFIER___ViewController(), interactor: ___FILEBASENAMEASIDENTIFIER___Interactor(), router: ___FILEBASENAMEASIDENTIFIER___Router())
+                }
 
-                    it("successfully initialises", closure: {
-                        expect(presenter).notTo(beNil())
-                        expect(presenter.interactor).notTo(beNil())
-                    })
+                it("successfully initialises", closure: {
+                    expect(presenter).notTo(beNil())
+                    expect(presenter.interactor).notTo(beNil())
                 })
             })
         }
