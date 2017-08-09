@@ -1,8 +1,5 @@
 folderName="ViperC"
 
-# The name of the base project template
-baseTemplate="ViperC"
-
 if [ "$#" -eq 1 ]; then
     folderName="$1"
 elif [ "$#" -gt 1 ]; then
