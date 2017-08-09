@@ -21,9 +21,7 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: QuickSpec {
         beforeSuite {
             let router = ___FILEBASENAMEASIDENTIFIER___Router()
             view = ___FILEBASENAMEASIDENTIFIER___Router.createModule() as? ___FILEBASENAMEASIDENTIFIER___ViewController
-            presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: view,
-                                                                interactor: interactor,
-                                                                router: router)
+            presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: view, interactor: interactor, router: router)
 
             view.presenter = presenter
             interactor.presenter = presenter
