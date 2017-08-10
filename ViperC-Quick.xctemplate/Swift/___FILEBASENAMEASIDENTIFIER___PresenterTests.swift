@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 
-//@testable import YOUR_MODULE_NAME;
+//@testable import YOUR_MODULE_NAME
 
 class ___FILEBASENAMEASIDENTIFIER___PresenterTests: QuickSpec {
 
