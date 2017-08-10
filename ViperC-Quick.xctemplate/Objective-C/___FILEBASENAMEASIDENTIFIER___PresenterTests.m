@@ -20,7 +20,7 @@ describe(@"___FILEBASENAMEASIDENTIFIER___Presenter Tests", ^{
         __block ___FILEBASENAMEASIDENTIFIER___Presenter *presenter;
 
         beforeEach(^{
-            ___FILEBASENAMEASIDENTIFIER___ViewController *view = [[___FILEBASENAMEASIDENTIFIER___ViewController alloc] init];
+            ___FILEBASENAMEASIDENTIFIER___ViewController *view = (___FILEBASENAMEASIDENTIFIER___ViewController *) [___FILEBASENAMEASIDENTIFIER___Router createModule];
             ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [[___FILEBASENAMEASIDENTIFIER___Interactor alloc] init];
             ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
             presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:view interactor:interactor router:router];
