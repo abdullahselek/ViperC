@@ -19,7 +19,7 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: QuickSpec {
                 var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
 
                 beforeEach {
-                    presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: ___FILEBASENAMEASIDENTIFIER___ViewController(), interactor: ___FILEBASENAMEASIDENTIFIER___Interactor(), router: ___FILEBASENAMEASIDENTIFIER___Router())
+                    presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: ___FILEBASENAMEASIDENTIFIER___Router.createModule() as? ___FILEBASENAMEASIDENTIFIER___ViewController, interactor: ___FILEBASENAMEASIDENTIFIER___Interactor(), router: ___FILEBASENAMEASIDENTIFIER___Router())
                 }
 
                 it("successfully initialises", closure: {
