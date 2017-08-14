@@ -14,7 +14,7 @@ import Nimble
 class ___FILEBASENAMEASIDENTIFIER___RouterTests: QuickSpec {
 
     override func spec() {
-        describe("Router Tests") {
+        describe("___FILEBASENAMEASIDENTIFIER___Router Tests") {
             describe(".createModule()", {
                 var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
 

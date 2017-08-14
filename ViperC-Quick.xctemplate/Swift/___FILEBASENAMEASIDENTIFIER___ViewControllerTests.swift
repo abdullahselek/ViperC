@@ -14,7 +14,7 @@ import Nimble
 class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: QuickSpec {
 
     override func spec() {
-        describe("ViewController Tests") {
+        describe("___FILEBASENAMEASIDENTIFIER___ViewController Tests") {
             var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
 
             beforeSuite {

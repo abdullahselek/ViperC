@@ -14,7 +14,7 @@ import Nimble
 class ___FILEBASENAMEASIDENTIFIER___PresenterTests: QuickSpec {
 
     override func spec() {
-        describe("Presenter Tests") {
+        describe("___FILEBASENAMEASIDENTIFIER___Presenter Tests") {
             describe(".init(interface:interactor:router:)", {
                 var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
 
