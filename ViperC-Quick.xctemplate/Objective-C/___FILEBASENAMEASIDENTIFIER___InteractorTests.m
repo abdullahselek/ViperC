@@ -23,7 +23,9 @@ describe(@"___FILEBASENAMEASIDENTIFIER___Interactor Tests", ^{
     beforeSuite(^{
         ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
         view = (___FILEBASENAMEASIDENTIFIER___ViewController *) [___FILEBASENAMEASIDENTIFIER___Router createModule];
-        presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:view interactor:interactor router:router];
+        presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:view
+                                                                            interactor:interactor
+                                                                                router:router];
         view.presenter = presenter;
         interactor.output = presenter;
     });
