@@ -17,7 +17,9 @@ class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___Wirefr
         let view = ___FILEBASENAMEASIDENTIFIER___ViewController(nibName: nil, bundle: nil)
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
         let router = ___FILEBASENAMEASIDENTIFIER___Router()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: view, interactor: interactor, router: router)
+        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: view,
+                                                                interactor: interactor,
+                                                                router: router)
 
         view.presenter = presenter
         interactor.presenter = presenter
