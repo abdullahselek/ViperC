@@ -11,15 +11,15 @@ import Nimble
 
 //@testable import YOUR_MODULE_NAME
 
-class ___FILEBASENAMEASIDENTIFIER___RouterTests: QuickSpec {
+class ___VARIABLE_viperModuleName___RouterTests: QuickSpec {
 
     override func spec() {
-        describe("___FILEBASENAMEASIDENTIFIER___Router Tests") {
+        describe("___VARIABLE_viperModuleName___Router Tests") {
             describe(".createModule()", {
-                var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
+                var view: ___VARIABLE_viperModuleName___ViewController!
 
                 beforeEach {
-                    view = ___FILEBASENAMEASIDENTIFIER___Router.createModule() as? ___FILEBASENAMEASIDENTIFIER___ViewController
+                    view = ___VARIABLE_viperModuleName___Router.createModule() as? ___VARIABLE_viperModuleName___ViewController
                 }
 
                 it("should create orders module successfully", closure: {

@@ -11,14 +11,14 @@ import Nimble
 
 //@testable import YOUR_MODULE_NAME
 
-class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: QuickSpec {
+class ___VARIABLE_viperModuleName___ViewControllerTests: QuickSpec {
 
     override func spec() {
-        describe("___FILEBASENAMEASIDENTIFIER___ViewController Tests") {
-            var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
+        describe("___VARIABLE_viperModuleName___ViewController Tests") {
+            var view: ___VARIABLE_viperModuleName___ViewController!
 
             beforeSuite {
-                view = ___FILEBASENAMEASIDENTIFIER___Router.createModule() as? ___FILEBASENAMEASIDENTIFIER___ViewController
+                view = ___VARIABLE_viperModuleName___Router.createModule() as? ___VARIABLE_viperModuleName___ViewController
             }
 
             context("when created by router", {

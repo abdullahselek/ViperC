@@ -11,17 +11,17 @@ import Nimble
 
 //@testable import YOUR_MODULE_NAME
 
-class ___FILEBASENAMEASIDENTIFIER___InteractorTests: QuickSpec {
+class ___VARIABLE_viperModuleName___InteractorTests: QuickSpec {
 
     override func spec() {
-        var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
+        var view: ___VARIABLE_viperModuleName___ViewController!
+        let interactor = ___VARIABLE_viperModuleName___Interactor()
+        var presenter: ___VARIABLE_viperModuleName___Presenter!
 
         beforeSuite {
-            let router = ___FILEBASENAMEASIDENTIFIER___Router()
-            view = ___FILEBASENAMEASIDENTIFIER___Router.createModule() as? ___FILEBASENAMEASIDENTIFIER___ViewController
-            presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interface: view,
+            let router = ___VARIABLE_viperModuleName___Router()
+            view = ___VARIABLE_viperModuleName___Router.createModule() as? ___VARIABLE_viperModuleName___ViewController
+            presenter = ___VARIABLE_viperModuleName___Presenter(interface: view,
                                                                 interactor: interactor,
                                                                 router: router)
 
