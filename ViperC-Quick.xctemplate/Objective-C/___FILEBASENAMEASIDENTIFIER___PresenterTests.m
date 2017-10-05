@@ -8,22 +8,22 @@
 
 #import <Quick/Quick.h>
 #import <Expecta/Expecta.h>
-#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
-#import "___FILEBASENAMEASIDENTIFIER___ViewController.h"
-#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
-#import "___FILEBASENAMEASIDENTIFIER___Router.h"
+#import "___VARIABLE_viperModuleName___Interactor.h"
+#import "___VARIABLE_viperModuleName___ViewController.h"
+#import "___VARIABLE_viperModuleName___Presenter.h"
+#import "___VARIABLE_viperModuleName___Router.h"
 
-QuickSpecBegin(___FILEBASENAMEASIDENTIFIER___PresenterTests)
+QuickSpecBegin(___VARIABLE_viperModuleName___PresenterTests)
 
-describe(@"___FILEBASENAMEASIDENTIFIER___Presenter Tests", ^{
-    describe(@"-[___FILEBASENAMEASIDENTIFIER___Presenter initWithInterface:interactor:router:]", ^{
-        __block ___FILEBASENAMEASIDENTIFIER___Presenter *presenter;
+describe(@"___VARIABLE_viperModuleName___Presenter Tests", ^{
+    describe(@"-[___VARIABLE_viperModuleName___Presenter initWithInterface:interactor:router:]", ^{
+        __block ___VARIABLE_viperModuleName___Presenter *presenter;
 
         beforeEach(^{
-            ___FILEBASENAMEASIDENTIFIER___ViewController *view = (___FILEBASENAMEASIDENTIFIER___ViewController *) [___FILEBASENAMEASIDENTIFIER___Router createModule];
-            ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [[___FILEBASENAMEASIDENTIFIER___Interactor alloc] init];
-            ___FILEBASENAMEASIDENTIFIER___Router *router = [[___FILEBASENAMEASIDENTIFIER___Router alloc] init];
-            presenter = [[___FILEBASENAMEASIDENTIFIER___Presenter alloc] initWithInterface:view
+            ___VARIABLE_viperModuleName___ViewController *view = (___VARIABLE_viperModuleName___ViewController *) [___VARIABLE_viperModuleName___Router createModule];
+            ___VARIABLE_viperModuleName___Interactor *interactor = [[___VARIABLE_viperModuleName___Interactor alloc] init];
+            ___VARIABLE_viperModuleName___Router *router = [[___VARIABLE_viperModuleName___Router alloc] init];
+            presenter = [[___VARIABLE_viperModuleName___Presenter alloc] initWithInterface:view
                                                                                 interactor:interactor
                                                                                     router:router];
         });

@@ -8,17 +8,17 @@
 
 #import <Quick/Quick.h>
 #import <Expecta/Expecta.h>
-#import "___FILEBASENAMEASIDENTIFIER___ViewController.h"
-#import "___FILEBASENAMEASIDENTIFIER___Router.h"
+#import "___VARIABLE_viperModuleName___ViewController.h"
+#import "___VARIABLE_viperModuleName___Router.h"
 
-QuickSpecBegin(___FILEBASENAMEASIDENTIFIER___RouterTests)
+QuickSpecBegin(___VARIABLE_viperModuleName___RouterTests)
 
-describe(@"___FILEBASENAMEASIDENTIFIER___Router Tests", ^{
-    describe(@"+[___FILEBASENAMEASIDENTIFIER___Router createModule]", ^{
-        __block ___FILEBASENAMEASIDENTIFIER___ViewController *view;
+describe(@"___VARIABLE_viperModuleName___Router Tests", ^{
+    describe(@"+[___VARIABLE_viperModuleName___Router createModule]", ^{
+        __block ___VARIABLE_viperModuleName___ViewController *view;
 
         beforeEach(^{
-            view = (___FILEBASENAMEASIDENTIFIER___ViewController *) [___FILEBASENAMEASIDENTIFIER___Router createModule];
+            view = (___VARIABLE_viperModuleName___ViewController *) [___VARIABLE_viperModuleName___Router createModule];
         });
 
         it(@"should create orders module successfully", ^{
