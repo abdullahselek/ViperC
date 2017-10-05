@@ -7,19 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
+#import "___VARIABLE_viperModuleName___Protocols.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>
+@interface ___VARIABLE_viperModuleName___Presenter: NSObject<___VARIABLE_viperModuleName___InteractorOutputProtocol>
 
-@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___ViewProtocol> view;
-@property (nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol> interactor;
-@property (nonatomic, weak) id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol> router;
+@property (nonatomic, weak, nullable) id<___VARIABLE_viperModuleName___ViewProtocol> view;
+@property (nonatomic) id<___VARIABLE_viperModuleName___InteractorInputProtocol> interactor;
+@property (nonatomic, weak) id<___VARIABLE_viperModuleName___WireframeProtocol> router;
 
-- (instancetype)initWithInterface:(id<___FILEBASENAMEASIDENTIFIER___ViewProtocol>)interface
-                       interactor:(id<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol>)interactor
-                           router:(id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>)router;
+- (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface
+                       interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor
+                           router:(id<___VARIABLE_viperModuleName___WireframeProtocol>)router;
 
 @end
 

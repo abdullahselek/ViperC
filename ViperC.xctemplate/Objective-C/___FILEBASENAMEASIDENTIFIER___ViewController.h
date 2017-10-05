@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
-#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
+#import "___VARIABLE_viperModuleName___Protocols.h"
+#import "___VARIABLE_viperModuleName___Presenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController<___FILEBASENAMEASIDENTIFIER___ViewProtocol>
+@interface ___VARIABLE_viperModuleName___ViewController: UIViewController<___VARIABLE_viperModuleName___ViewProtocol>
 
-@property (nonatomic) ___FILEBASENAMEASIDENTIFIER___Presenter *presenter;
+@property (nonatomic) ___VARIABLE_viperModuleName___Presenter *presenter;
 
 @end
 

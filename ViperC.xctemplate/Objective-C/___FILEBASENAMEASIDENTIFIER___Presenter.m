@@ -6,13 +6,13 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
  
-#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
+#import "___VARIABLE_viperModuleName___Presenter.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Presenter
+@implementation ___VARIABLE_viperModuleName___Presenter
 
-- (instancetype)initWithInterface:(id<___FILEBASENAMEASIDENTIFIER___ViewProtocol>)interface
-					   interactor:(id<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol>)interactor
-					   	   router:(id<___FILEBASENAMEASIDENTIFIER___WireframeProtocol>)router {
+- (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface
+					   interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor
+					   	   router:(id<___VARIABLE_viperModuleName___WireframeProtocol>)router {
     if (self = [super init]) {
         self.view = interface;
         self.interactor = interactor;

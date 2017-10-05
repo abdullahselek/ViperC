@@ -10,28 +10,28 @@
 
 #pragma mark - WireFrameProtocol
 
-@protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol <NSObject>
+@protocol ___VARIABLE_viperModuleName___WireframeProtocol <NSObject>
 
 @end
 
 #pragma mark - PresenterProtocol
 
-@protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol <NSObject>
+@protocol ___VARIABLE_viperModuleName___PresenterProtocol <NSObject>
 
 @end
 
 #pragma mark - InteractorProtocol
 
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol <NSObject>
+@protocol ___VARIABLE_viperModuleName___InteractorOutputProtocol <NSObject>
 
 /** Interactor -> Presenter */
 
 @end
 
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol <NSObject>
+@protocol ___VARIABLE_viperModuleName___InteractorInputProtocol <NSObject>
 
-- (void)setOutput:(id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)output;
-- (id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol>)getOutputProtocol;
+- (void)setOutput:(id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)output;
+- (id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)getOutputProtocol;
 
 /** Presenter -> Interactor */
 
@@ -39,7 +39,7 @@
 
 #pragma mark - ViewProtocol
 
-@protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol <NSObject>
+@protocol ___VARIABLE_viperModuleName___ViewProtocol <NSObject>
 
 /** Presenter -> ViewController */
 

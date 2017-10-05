@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "___FILEBASENAMEASIDENTIFIER___Protocols.h"
+#import "___VARIABLE_viperModuleName___Protocols.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject<___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol>
+@interface ___VARIABLE_viperModuleName___Interactor: NSObject<___VARIABLE_viperModuleName___InteractorInputProtocol>
 
-@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol> output;
+@property (nonatomic, weak, nullable) id<___VARIABLE_viperModuleName___InteractorOutputProtocol> output;
 
 @end
 
