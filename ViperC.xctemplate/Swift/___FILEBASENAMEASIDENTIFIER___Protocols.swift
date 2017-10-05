@@ -10,36 +10,36 @@ import Foundation
 
 // MARK: WireFrameProtocol
 
-protocol ___FILEBASENAMEASIDENTIFIER___WireframeProtocol: class {
+protocol ___VARIABLE_viperModuleName___WireframeProtocol: class {
 
 }
 
 // MARK: PresenterProtocol
 
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
+protocol ___VARIABLE_viperModuleName___PresenterProtocol: class {
 
-    var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol? { get set }
+    var interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol? { get set }
 }
 
 // MARK: InteractorProtocol
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol: class {
+protocol ___VARIABLE_viperModuleName___InteractorOutputProtocol: class {
 
     /** Interactor -> Presenter */
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___InteractorInputProtocol: class {
+protocol ___VARIABLE_viperModuleName___InteractorInputProtocol: class {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutputProtocol? { get set }
+    var presenter: ___VARIABLE_viperModuleName___InteractorOutputProtocol? { get set }
 
     /** Presenter -> Interactor */
 }
 
 // MARK: ViewProtocol
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
+protocol ___VARIABLE_viperModuleName___ViewProtocol: class {
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol? { get set }
+    var presenter: ___VARIABLE_viperModuleName___PresenterProtocol? { get set }
 
     /** Presenter -> ViewController */
 }
