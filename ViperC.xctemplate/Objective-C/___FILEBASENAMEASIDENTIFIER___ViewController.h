@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___VARIABLE_viperModuleName___ViewController: UIViewController<___VARIABLE_viperModuleName___ViewProtocol>
+@interface ___VARIABLE_viperModuleName___ViewController : UIViewController<___VARIABLE_viperModuleName___ViewProtocol>
 
 @property (nonatomic) ___VARIABLE_viperModuleName___Presenter *presenter;
 

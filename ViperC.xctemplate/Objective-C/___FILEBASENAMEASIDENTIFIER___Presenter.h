@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ___VARIABLE_viperModuleName___Presenter: NSObject<___VARIABLE_viperModuleName___InteractorOutputProtocol, ___VARIABLE_viperModuleName___PresenterProtocol>
+@interface ___VARIABLE_viperModuleName___Presenter : NSObject<___VARIABLE_viperModuleName___InteractorOutputProtocol, ___VARIABLE_viperModuleName___PresenterProtocol>
 
 @property (nonatomic, weak, nullable) id<___VARIABLE_viperModuleName___ViewProtocol> view;
 @property (nonatomic) id<___VARIABLE_viperModuleName___InteractorInputProtocol> interactor;
