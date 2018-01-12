@@ -10,7 +10,8 @@
 
 @implementation ___VARIABLE_viperModuleName___ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
 }
 

@@ -13,7 +13,8 @@
  
 @implementation ___VARIABLE_viperModuleName___Router
 
-+ (UIViewController *)createModule {
++ (UIViewController *)createModule
+{
     NSString *viewName = NSStringFromClass([___VARIABLE_viperModuleName___ViewController class]);
     ___VARIABLE_viperModuleName___ViewController *viewController = [[___VARIABLE_viperModuleName___ViewController alloc] initWithNibName:viewName bundle:nil];
     ___VARIABLE_viperModuleName___Interactor *interactor = [[___VARIABLE_viperModuleName___Interactor alloc] init];

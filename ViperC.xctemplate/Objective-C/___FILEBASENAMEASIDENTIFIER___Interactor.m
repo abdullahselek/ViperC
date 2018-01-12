@@ -12,11 +12,13 @@
 
 #pragma mark - InteractorProtocol
 
-- (void)setOutput:(id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)output {
+- (void)setOutput:(id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)output
+{
 	_output = output;
 }
 
-- (id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)getOutputProtocol {
+- (id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)getOutputProtocol
+{
 	return self.output;
 }
  
