@@ -10,7 +10,7 @@
 #import "ToDoProtocols.h"
 #import "ToDoViewController.h"
 
-@interface ToDoRouter: NSObject<ToDoWireframeProtocol>
+@interface ToDoRouter : NSObject<ToDoWireframeProtocol>
 
 @property (nonatomic, weak) ToDoViewController *viewController;
 

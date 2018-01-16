@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ToDoPresenter: NSObject<ToDoInteractorOutputProtocol>
+@interface ToDoPresenter : NSObject<ToDoInteractorOutputProtocol>
 
 @property (nonatomic, weak, nullable) id<ToDoViewProtocol> view;
 @property (nonatomic) id<ToDoInteractorInputProtocol> interactor;
