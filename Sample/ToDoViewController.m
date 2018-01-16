@@ -16,7 +16,8 @@
 
 @implementation ToDoViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
     UIBarButtonItem *addTodoItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                  target:self
@@ -27,27 +28,32 @@
 
 #pragma mark - IBActions
 
-- (IBAction)add:(id)sender {
+- (IBAction)add:(id)sender
+{
     ToDoItem *item = [[ToDoItem alloc] initWithText:@"ToDo" date:@"28.04.2017"];
     [self.presenter addToDoItem:item];
 }
 
 #pragma mark - WireFrameProtocol
 
-- (void)showAddedItem:(ToDoItem *)item {
+- (void)showAddedItem:(ToDoItem *)item
+{
     [self.todoList addObject:item];
     [self.tableView reloadData];
 }
 
 #pragma mark - UITableView DataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return [self.todoList count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ToDoTableViewCell"];
-    if (cell == nil) {
+    if (cell == nil)
+    {
         NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"ToDoTableViewCell" owner:self options:nil];
         cell = [topLevelObjects objectAtIndex:0];
     }

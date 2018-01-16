@@ -13,15 +13,18 @@
 
 #pragma mark - InteractorProtocol
 
-- (void)setOutput:(id<ToDoInteractorOutputProtocol>)output {
+- (void)setOutput:(id<ToDoInteractorOutputProtocol>)output
+{
     _output = output;
 }
 
-- (id<ToDoInteractorOutputProtocol>)getOutputProtocol {
+- (id<ToDoInteractorOutputProtocol>)getOutputProtocol
+{
     return self.output;
 }
 
-- (void)addToDoItem:(ToDoItem *)item {
+- (void)addToDoItem:(ToDoItem *)item
+{
     [self.output sendAddedItem:item];
 }
 

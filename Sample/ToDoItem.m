@@ -10,8 +10,10 @@
 
 @implementation ToDoItem
 
-- (instancetype)initWithText:(NSString *)text date:(NSString *)date {
-    if (self = [super init]) {
+- (instancetype)initWithText:(NSString *)text date:(NSString *)date
+{
+    if (self = [super init])
+    {
         self.text = text;
         self.date = date;
     }

@@ -13,7 +13,8 @@
  
 @implementation ToDoRouter
 
-+ (UIViewController *)createModule {
++ (UIViewController *)createModule
+{
     NSString *viewName = NSStringFromClass([ToDoViewController class]);
     ToDoViewController *viewController = [[ToDoViewController alloc] initWithNibName:viewName bundle:nil];
     ToDoInteractor *interactor = [[ToDoInteractor alloc] init];
