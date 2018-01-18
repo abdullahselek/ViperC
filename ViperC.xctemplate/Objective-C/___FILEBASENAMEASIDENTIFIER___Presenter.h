@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak, nullable) id<___VARIABLE_viperModuleName___ViewProtocol> view;
 @property (nonatomic) id<___VARIABLE_viperModuleName___InteractorInputProtocol> interactor;
-@property (nonatomic, weak) id<___VARIABLE_viperModuleName___WireframeProtocol> router;
+@property (nonatomic) id<___VARIABLE_viperModuleName___WireframeProtocol> router;
 
 - (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface
                        interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor
