@@ -10,7 +10,9 @@
 
 @implementation ___VARIABLE_viperModuleName___Presenter
 
-- (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor router:(id<___VARIABLE_viperModuleName___WireframeProtocol>)router
+- (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface
+                       interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor
+                           router:(id<___VARIABLE_viperModuleName___WireframeProtocol>)router
 {
     if (self = [super init])
     {
