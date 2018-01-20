@@ -14,9 +14,9 @@
 
 @interface ___VARIABLE_viperModuleName___InteractorTests : XCTestCase
 
-@@property (nonatomic) ___VARIABLE_viperModuleName___ViewController *view;
-@@property (nonatomic) ___VARIABLE_viperModuleName___Interactor *interactor;
-@@property (nonatomic) ___VARIABLE_viperModuleName___Presenter *presenter;
+@property (nonatomic) ___VARIABLE_viperModuleName___ViewController *view;
+@property (nonatomic) ___VARIABLE_viperModuleName___Interactor *interactor;
+@property (nonatomic) ___VARIABLE_viperModuleName___Presenter *presenter;
 
 @end
 
