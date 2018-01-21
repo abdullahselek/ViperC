@@ -16,7 +16,7 @@
 
 @implementation ___VARIABLE_viperModuleName___ViewControllerTests
 
-- (void)testCreateModule
+- (void)testInit
 {
     ___VARIABLE_viperModuleName___ViewController *viewController = (___VARIABLE_viperModuleName___ViewController *) [___VARIABLE_viperModuleName___Router createModule];
     XCTAssertNotNil(viewController);
