@@ -3,10 +3,11 @@
 # take the first command line parameter as a folder name
 # sample usage : ./install.sh ViperC
 # sample usage : ./install.sh ViperC-Quick
+# sample usage : ./install.sh ViperC-XCTest
 
-if [[ "$1" != "ViperC" && "$1" != "ViperC-Quick" ]]; then
+if [[ "$1" != "ViperC" && "$1" != "ViperC-Quick" && "$1" != "ViperC-XCTest" ]]; then
     echo "Invalid argument!"
-    echo "Available arguments: ViperC, ViperC-Quick"
+    echo "Available arguments: ViperC, ViperC-Quick, ViperC-XCTest"
     exit 1
 fi
 
@@ -16,6 +17,7 @@ elif [ "$#" -gt 1 ]; then
     echo -e "This script takes one argument at most."
     echo "\\ne.g. ./install.sh ViperC"
     echo "\\ne.g. ./install.sh ViperC-Quick"
+    echo "\\ne.g. ./install.sh ViperC-XCTest"
     exit 1
 fi
 
