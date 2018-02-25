@@ -1,6 +1,6 @@
 ![License](https://img.shields.io/dub/l/vibe-d.svg)
 
-![ViperC](https://github.com/abdullahselek/ViperC/blob/master/images/viperc_header.png)
+![ViperC](https://raw.githubusercontent.com/abdullahselek/ViperC/master/images/viperc_header.png)
 
 # ViperC
 Xcode template for VIPER Architecture for both Objective-C and Swift.
@@ -21,12 +21,12 @@ You can find ViperC under ```/Users/USER_NAME/Library/Developer/Xcode/Templates/
 
 ## Usage
 
-![ViperC Demo](https://github.com/abdullahselek/ViperC/blob/master/images/demo.gif)
+![ViperC Demo](https://raw.githubusercontent.com/abdullahselek/ViperC/master/images/demo.gif)
 
 
 ## VIPER Diagram
 
-![VIPER](https://github.com/abdullahselek/ViperC/blob/master/images/viper.png)
+![VIPER](https://raw.githubusercontent.com/abdullahselek/ViperC/master/images/viper.png)
 
 ## Generated Source Code
 
