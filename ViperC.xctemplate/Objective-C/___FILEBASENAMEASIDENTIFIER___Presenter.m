@@ -19,7 +19,7 @@
         self.view = interface;
         self.interactor = interactor;
         self.router = router;
-        [self.interactor setOutput:self];
+        [self.interactor setPresenter:self];
     }
     return self;
 }

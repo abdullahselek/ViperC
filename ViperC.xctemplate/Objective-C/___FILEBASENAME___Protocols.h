@@ -30,8 +30,8 @@
 
 @protocol ___VARIABLE_viperModuleName___InteractorInputProtocol <NSObject>
 
-- (void)setOutput:(id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)output;
-- (id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)getOutputProtocol;
+- (void)setPresenter:(id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)presenter;
+- (id<___VARIABLE_viperModuleName___InteractorOutputProtocol>)getPresenter;
 
 /** Presenter -> Interactor */
 
