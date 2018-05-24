@@ -30,7 +30,6 @@ class ___VARIABLE_viperModuleName___InteractorTests: XCTestCase {
 
     override func tearDown() {
         presenter = nil;
-        interactor = nil;
         view = nil;
         super.tearDown()
     }
