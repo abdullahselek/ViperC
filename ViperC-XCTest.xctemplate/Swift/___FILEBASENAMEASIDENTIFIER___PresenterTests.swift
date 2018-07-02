@@ -20,9 +20,7 @@ class ___VARIABLE_viperModuleName___PresenterTests: XCTestCase {
             XCTFail()
             return
         }
-        presenter = ___VARIABLE_viperModuleName___Presenter(interface: viewController,
-                                                            interactor: ___VARIABLE_viperModuleName___Interactor(),
-                                                            router: ___VARIABLE_viperModuleName___Router())
+        presenter = ___VARIABLE_viperModuleName___Presenter(interface: viewController, interactor: ___VARIABLE_viperModuleName___Interactor(), router: ___VARIABLE_viperModuleName___Router())
     }
 
     override func tearDown() {

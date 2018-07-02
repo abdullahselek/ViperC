@@ -21,9 +21,7 @@ class ___VARIABLE_viperModuleName___InteractorTests: XCTestCase {
 
         let router = ___VARIABLE_viperModuleName___Router()
         view = ___VARIABLE_viperModuleName___Router.createModule() as? ___VARIABLE_viperModuleName___ViewController
-        presenter = ___VARIABLE_viperModuleName___Presenter(interface: view,
-                                                            interactor: interactor,
-                                                            router: router)
+        presenter = ___VARIABLE_viperModuleName___Presenter(interface: view, interactor: interactor, router: router)
         view.presenter = presenter
         interactor.presenter = presenter
     }
