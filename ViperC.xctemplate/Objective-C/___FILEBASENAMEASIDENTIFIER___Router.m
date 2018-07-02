@@ -19,9 +19,7 @@
     ___VARIABLE_viperModuleName___ViewController *viewController = [[___VARIABLE_viperModuleName___ViewController alloc] initWithNibName:viewName bundle:nil];
     ___VARIABLE_viperModuleName___Interactor *interactor = [[___VARIABLE_viperModuleName___Interactor alloc] init];
     ___VARIABLE_viperModuleName___Router *router = [[___VARIABLE_viperModuleName___Router alloc] init];
-    ___VARIABLE_viperModuleName___Presenter *presenter = [[___VARIABLE_viperModuleName___Presenter alloc] initWithInterface:viewController
-                                                                                                                 interactor:interactor
-                                                                                                                     router:router];
+    ___VARIABLE_viperModuleName___Presenter *presenter = [[___VARIABLE_viperModuleName___Presenter alloc] initWithInterface:viewController interactor:interactor router:router];
     viewController.presenter = presenter;
     router.viewController = viewController;
     return viewController;

@@ -17,9 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) id<___VARIABLE_viperModuleName___InteractorInputProtocol> interactor;
 @property (nonatomic) id<___VARIABLE_viperModuleName___WireframeProtocol> router;
 
-- (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface
-                       interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor
-                           router:(id<___VARIABLE_viperModuleName___WireframeProtocol>)router;
+- (instancetype)initWithInterface:(id<___VARIABLE_viperModuleName___ViewProtocol>)interface interactor:(id<___VARIABLE_viperModuleName___InteractorInputProtocol>)interactor router:(id<___VARIABLE_viperModuleName___WireframeProtocol>)router;
 
 @end
 
