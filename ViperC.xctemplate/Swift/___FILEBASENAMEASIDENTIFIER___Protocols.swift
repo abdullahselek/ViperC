@@ -19,6 +19,7 @@ protocol ___VARIABLE_viperModuleName___WireframeProtocol: class {
 protocol ___VARIABLE_viperModuleName___PresenterProtocol: class {
 
     var interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol? { get set }
+
 }
 
 // MARK: InteractorProtocol

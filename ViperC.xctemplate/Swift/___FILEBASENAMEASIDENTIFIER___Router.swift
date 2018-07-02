@@ -17,9 +17,7 @@ class ___VARIABLE_viperModuleName___Router: ___VARIABLE_viperModuleName___Wirefr
         let view = ___VARIABLE_viperModuleName___ViewController(nibName: nil, bundle: nil)
         let interactor = ___VARIABLE_viperModuleName___Interactor()
         let router = ___VARIABLE_viperModuleName___Router()
-        let presenter = ___VARIABLE_viperModuleName___Presenter(interface: view,
-                                                                interactor: interactor,
-                                                                router: router)
+        let presenter = ___VARIABLE_viperModuleName___Presenter(interface: view, interactor: interactor, router: router)
 
         view.presenter = presenter
         interactor.presenter = presenter
