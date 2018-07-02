@@ -28,9 +28,7 @@
     ___VARIABLE_viperModuleName___Router *router = [___VARIABLE_viperModuleName___Router new];
     self.view = (___VARIABLE_viperModuleName___ViewController *) [___VARIABLE_viperModuleName___Router createModule];
     self.interactor = [[___VARIABLE_viperModuleName___Interactor alloc] init];
-    self.presenter = [[___VARIABLE_viperModuleName___Presenter alloc] initWithInterface:view
-                                                                             interactor:interactor
-                                                                                 router:router];
+    self.presenter = [[___VARIABLE_viperModuleName___Presenter alloc] initWithInterface:view interactor:interactor router:router];
     self.view.presenter = presenter;
     self.interactor.output = presenter;
 }
