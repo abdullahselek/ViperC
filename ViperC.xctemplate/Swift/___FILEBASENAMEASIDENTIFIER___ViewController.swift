@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___VARIABLE_viperModuleName___ViewController: UIViewController, ___VARIABLE_viperModuleName___ViewProtocol {
+class ___VARIABLE_viperModuleName___ViewController: UIViewController {
 
     var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?
 
@@ -16,4 +16,8 @@ class ___VARIABLE_viperModuleName___ViewController: UIViewController, ___VARIABL
         super.viewDidLoad()
     }
 
+}
+
+extension ___VARIABLE_viperModuleName___ViewController: ___VARIABLE_viperModuleName___ViewProtocol {
+    // MARK: ___VARIABLE_viperModuleName___ViewProtocol functions
 }

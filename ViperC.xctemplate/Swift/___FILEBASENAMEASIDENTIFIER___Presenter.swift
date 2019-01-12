@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ___VARIABLE_viperModuleName___Presenter: ___VARIABLE_viperModuleName___PresenterProtocol, ___VARIABLE_viperModuleName___InteractorOutputProtocol {
+class ___VARIABLE_viperModuleName___Presenter: ___VARIABLE_viperModuleName___PresenterProtocol {
 
     weak private var view: ___VARIABLE_viperModuleName___ViewProtocol?
     var interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol?
@@ -20,4 +20,8 @@ class ___VARIABLE_viperModuleName___Presenter: ___VARIABLE_viperModuleName___Pre
         self.router = router
     }
 
+}
+
+extension ___VARIABLE_viperModuleName___Presenter: ___VARIABLE_viperModuleName___InteractorOutputProtocol {
+    // MARK: ___VARIABLE_viperModuleName___InteractorOutputProtocol functions
 }
