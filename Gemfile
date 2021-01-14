@@ -2,4 +2,4 @@ source "https://rubygems.org"
 
 gem "xcpretty"
 gem 'slather'
-gem 'nokogiri'
+gem 'nokogiri', '~>1.11.0'
